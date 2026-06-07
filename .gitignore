@@ -19,3 +19,4 @@ frontend/dist/
 # OS files
 .DS_Store
 Thumbs.dbbackend/house_price_model.pkl
+backend/house_price_model.pkl
