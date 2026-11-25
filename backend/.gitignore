@@ -1,0 +1,74 @@
+# ==================================================
+# HOUSE PRICE PREDICTION - BACKEND GITIGNORE
+# ==================================================
+
+# 1. Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# 2. Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 3. Environment variables and sensitive files
+.env
+.env.*
+!.env.example
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# 4. Generated machine learning models
+*.pkl
+*.joblib
+*.pickle
+*.onnx
+
+# 5. Testing and code coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# 6. Code quality and type-checking caches
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# 7. Application logs
+*.log
+logs/
+
+# 8. Build and distribution files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 9. IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 10. Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 11. Temporary files
+*.tmp
+*.bak
+*.temp
+temp/
+tmp/
+
+# 12. Jupyter Notebook checkpoints
+.ipynb_checkpoints/
