@@ -1,12 +1,32 @@
 {
-  "name": "frontend",
+  "name": "house-price-prediction-frontend",
+  "version": "1.1.0",
   "private": true,
-  "version": "0.0.0",
+  "description": "A responsive TypeScript frontend for a machine learning house price prediction application integrated with FastAPI and Random Forest regression.",
+  "author": "Nikhil H R",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NikhilH-R/house-price-prediction-devops.git",
+    "directory": "frontend"
+  },
+  "homepage": "https://github.com/NikhilH-R/house-price-prediction-devops#readme",
+  "keywords": [
+    "typescript",
+    "vite",
+    "machine-learning",
+    "fastapi",
+    "random-forest",
+    "house-price-prediction",
+    "full-stack",
+    "responsive-dashboard",
+    "rest-api"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "vite --port 5173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5173 --strictPort"
   },
   "devDependencies": {
     "typescript": "~6.0.2",
