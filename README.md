@@ -11,6 +11,7 @@
 ![Coverage](https://img.shields.io/badge/Backend_Coverage-95%25-brightgreen)
 ![R2 Score](https://img.shields.io/badge/R2_Score-0.8037-blue)
 ![Version](https://img.shields.io/badge/Version-1.1.0-blue)
+[![House Price Prediction CI](https://github.com/NikhilH-R/house-price-prediction-devops/actions/workflows/ci.yml/badge.svg)](https://github.com/NikhilH-R/house-price-prediction-devops/actions/workflows/ci.yml)
 
 ---
 
