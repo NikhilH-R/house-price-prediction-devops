@@ -581,6 +581,10 @@ function setLoading(loading: boolean): void {
 
   predictButton.disabled = loading
   resetButton.disabled = loading
+    form.querySelectorAll<HTMLInputElement>('input')
+    .forEach(input => {
+      input.disabled = loading
+    })
 
   form.setAttribute(
     'aria-busy',
@@ -706,6 +710,28 @@ form.addEventListener(
     }
   }
 )
+
+// ==================================================
+// CLEAR STALE PREDICTION WHEN INPUT CHANGES
+// ==================================================
+
+form.addEventListener('input', () => {
+  showMessage(
+    'Prediction Result',
+    'Input changed. Click Predict House Price to generate a new estimate.',
+    'default'
+  )
+})
+
+form.addEventListener('invalid', () => {
+  showMessage(
+    'Invalid Input',
+    'Please enter valid property information before predicting.',
+    'error'
+  )
+}, true)
+
+
 
 // ==================================================
 // 13. RESET FUNCTIONALITY
